@@ -40,7 +40,7 @@ public class Player : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        rbody2D.velocity = Vector2.right * axisH * Speed;
+        rbody2D.velocity = Vector2.right * axisH * Speed; // 좌우이동
         rectTransform.position = new Vector3(transform.position.x,transform.position.y + 1f,0);
     }
     private void OnCollisionEnter2D(Collision2D collision)
